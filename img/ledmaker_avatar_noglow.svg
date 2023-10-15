@@ -1,0 +1,15 @@
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='128' height='128' viewBox='16 16 96 96' style='background-color:transparent;' baseProfile='full' >
+<circle id='pcb' cx='64' cy='64' r='49' fill='#000000' fill-opacity='0' />
+<circle id='led0' cx='52' cy='74' r='10' fill='hsl(275, 0%, 100%)' fill-opacity='1' />
+<circle id='led1' cx='54' cy='52' r='10' fill='hsl(260, 50%, 100%)' fill-opacity='1' />
+<circle id='led2' cx='76' cy='54' r='10' fill='hsl(245, 75%, 100%)' fill-opacity='1' />
+<circle id='led3' cx='74' cy='76' r='10' fill='hsl(290, 100%, 100%)' fill-opacity='1' />
+<circle id='led4' cx='90' cy='38' r='10' fill='hsl(220, 100%, 50%)' fill-opacity='0.75' />
+<circle id='led5' cx='101' cy='64' r='10' fill='hsl(195, 100%, 50%)' fill-opacity='0.75' />
+<circle id='led6' cx='90' cy='90' r='10' fill='hsl(165, 100%, 50%)' fill-opacity='0.75' />
+<circle id='led7' cx='64' cy='101' r='10' fill='hsl(130, 100%, 50%)' fill-opacity='0.75' />
+<circle id='led8' cx='38' cy='90' r='10' fill='hsl(70, 100%, 50%)' fill-opacity='0.75' />
+<circle id='led9' cx='27' cy='64' r='10' fill='hsl(40, 100%, 50%)' fill-opacity='0.75' />
+<circle id='led10' cx='38' cy='38' r='10' fill='hsl(0, 100%, 50%)' fill-opacity='0.75' />
+<circle id='led11' cx='64' cy='27' r='10' fill='hsl(280, 100%, 50%)' fill-opacity='0.75' />
+</svg>
