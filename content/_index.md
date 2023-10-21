@@ -1,0 +1,7 @@
+Free [open-source](https://github.com/ledmakerspace) cross-platform technology for animation badges, bike lights, eye-catching jewelry, wearables, and more. Animations can run in a simulator or on hardware with smart LEDs such as [DotStars](https://learn.adafruit.com/adafruit-dotstar-leds/overview) and [NeoPixels](https://www.adafruit.com/category/168).
+
+Suitable for makerspaces aiming to teach coding concepts (including asynchronous multithreaded programming) to teens and adults. LED animations can be instantly viewed in the simulator after code edits.
+
+Requires a Windows or Linux <a target="_self" href="/post/ide#system_id">computer</a>, Microsoft's free [Visual Studio Code](https://code.visualstudio.com/) editor/simulator, and the free open-source [Glow IDE](https://marketplace.visualstudio.com/items?itemName=ledmakerorg.glow-ide#overview) extension. No extra hardware is needed to get started, however the [Elektra LED development board](/post/hardware/) is available for hardware enthusiasts looking to run their animations on smart LED devices powered by an [ARM Cortex microcontroller](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf).
+
+Follow the install [procedure](/post/ide#install_id) to get started. Also see this <a target="_self" href="/tutorial/installation.mp4">tutorial</a>.

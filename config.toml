@@ -1,0 +1,164 @@
+baseURL = "https://xyz01.net/"
+canonifyurls = true
+DefaultContentLanguage = "en"
+theme = "beautifulhugo"
+title = "LED makerspace"
+metaDataFormat = "toml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[blackfriday]
+    hrefTargetBlank = true
+    noreferrerLinks = true
+
+
+[Author]
+	name = ""
+	email = "trishores@gmail.com"
+	github = "ledmakerspace"
+
+[Params.bigimg]
+    src = "/img/auto-automobile-automotive-919073_opt.jpg"
+
+[Params]
+	description = "technology for smart LEDs"
+	homeTitle = " "
+	subtitle = "Open source smart LED technology for makerspaces"
+	#logo = "/img/ledmaker_avatar_glow.svg"
+	favicon = "/img/ledmaker_avatar_noglow_opt.png"
+	dateFormat = "January 2, 2006"
+	commit = false
+	rss = false
+	comments = false
+	readingTime = false
+	useHLJS = false
+	socialShare = false
+  copyright = "2019-2021 ledmaker.org | All rights reserved | trishores@gmail.com"
+
+# Home menu
+
+[[menu.main]]
+	name = "HOME"
+	url = ""
+	weight = 1
+
+# Posts menu
+
+[[menu.main]]
+	identifier = "posts"
+	name = "POSTS"
+	weight = 2
+
+[[menu.main]]
+	parent = "posts"
+	name = "Glow IDE"
+	url = "post/ide"
+	weight = 1
+
+[[menu.main]]
+	parent = "posts"
+	name = "Glowscript"
+	url = "post/script"
+	weight = 2
+
+[[menu.main]]
+	parent = "posts"
+	name = "Glow OS"
+	url = "post/os"
+	weight = 3
+
+[[menu.main]]
+	parent = "posts"
+	name = "Hardware"
+	url = "post/hardware"
+	weight = 4
+
+
+# Our Animations menu
+
+[[menu.main]]
+    identifier = "samples"
+    name = "OUR ANIMATIONS"
+    weight = 3
+
+[[menu.main]]
+    parent = "samples"
+    name = "spinner"
+    url = "sample/spinner"
+    weight = 1
+
+[[menu.main]]
+    parent = "samples"
+    name = "bicycle turn signal"
+    url = "sample/bicycleturnsignal"
+    weight = 2
+
+[[menu.main]]
+    parent = "samples"
+    name = "bicycle rear light"
+    url = "sample/bicyclerearlight"
+    weight = 3
+
+[[menu.main]]
+    parent = "samples"
+    name = "lightbeam over lava"
+    url = "sample/lightbeamlava"
+    weight = 4
+
+[[menu.main]]
+    parent = "samples"
+    name = "matrix lava"
+    url = "sample/matrixlava"
+    weight = 5
+
+
+# Community Animations menu
+
+[[menu.main]]
+    identifier = "community"
+    name = "COMMUNITY ANIMATIONS"
+    weight = 4
+
+[[menu.main]]
+    parent = "community"
+    name = "simple beacon"
+    url = "community/simplebeacon"
+    weight = 1
+
+
+# Download menu
+
+#[[menu.main]]
+#	name = "DOWNLOADS"
+#	url = "downloads"
+#	weight = 5
+
+
+# DesignServices menu
+
+#[[menu.main]]
+#	name = "SERVICES"
+#	url = "services"
+#	weight = 6
+
+
+# DesignServices menu
+
+#[[menu.main]]
+#	name = "ABOUT"
+#	url = "about"
+#	weight = 7
+
+
+# Contact menu
+
+#[[menu.main]]
+#	name = "CONTACT"
+#	url = "contact"
+#	weight = 8

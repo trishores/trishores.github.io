@@ -1,0 +1,65 @@
+{{ if .IsHome }}
+  {{ if .Site.Params.homeTitle }}{{ $.Scratch.Set "title" .Site.Params.homeTitle }}{{ else }}{{ $.Scratch.Set "title" .Site.Title }}{{ end }}
+  {{ if .Site.Params.subtitle }}{{ $.Scratch.Set "subtitle" .Site.Params.subtitle }}{{ end }}
+  {{ if .Site.Params.bigimg }}{{ $.Scratch.Set "bigimg" .Site.Params.bigimg }}{{ end }}
+{{ else }}
+  {{ $.Scratch.Set "title" .Title }}
+  {{ if .Params.subtitle }}{{ $.Scratch.Set "subtitle" .Params.subtitle }}{{ end }}
+  {{ if .Params.bigimg }}{{ $.Scratch.Set "bigimg" .Params.bigimg }}{{ end }}
+{{ end }}
+{{ $bigimg := $.Scratch.Get "bigimg" }}
+{{ $title := $.Scratch.Get "title" }}
+{{ $subtitle := $.Scratch.Get "subtitle" }}
+
+{{ if or $bigimg $title }}
+  <header class="header-section {{ if $bigimg }}has-img{{ end }}">
+    {{ if $bigimg }}
+      <div class="intro-header big-img saturation" style="background-image: url(' {{ $.Site.Params.bigimg.src }} ');">
+        {{ $subtitle := $.Scratch.Get "subtitle" }}
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading2">
+                <h1>{{ with $.Scratch.Get "title" }}{{.}}{{ else }}<br/>{{ end }}</h1>
+                  {{ if $subtitle }}
+                    {{ if eq .Type "page" }}
+                      <span class="page-subheading2">{{ $subtitle }}</span>
+                    {{ else }}
+                      <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2>
+                    {{ end }}
+                  {{ end }}
+                  {{ partial "post_meta.html" . }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    {{else}}
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              {{ if eq .Type "list" }}
+                <h1>{{ if .Data.Singular }}#{{ end }}{{ .Title }}</h1>
+              {{ else }}
+                <h1>{{ with $title }}{{.}}{{ else }}<br/>{{ end }}</h1>
+              {{ end }}
+              {{ if $subtitle }}
+                {{ if eq .Type "page_ignored" }}
+                  <span class="post-subheading">{{ $subtitle }}</span>
+                {{ else }}
+                  <h2 class="post-subheading">{{ $subtitle }}</h2>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{end}}
+  </header>
+{{ else }}
+  <div class="intro-header"></div>
+{{ end }}
